@@ -48,7 +48,7 @@ class FacebookLoginScreen extends StatelessWidget {
                   SizedBox(
                     height: 30.0,
                   ),
-                  TextButton(
+                  FlatButton(
                     onPressed: null,
                     child: Text('Log In'),
                     splashColor: Colors.red,
