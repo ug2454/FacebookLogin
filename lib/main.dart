@@ -1,7 +1,12 @@
-import 'package:facebook_login/screens/facebook_login.dart';
+import 'package:facebook_login/screens/facebook_login_screen.dart';
+import 'package:facebook_login/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -12,6 +17,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: FacebookLoginScreen(),
+      routes: {
+        HomeScreen.routeName: (ctx) => HomeScreen(),
+        FacebookLoginScreen.routeName: (ctx) => FacebookLoginScreen()
+      },
     );
   }
 }

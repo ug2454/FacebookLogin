@@ -28,6 +28,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
   font_awesome_flutter: ^8.10.0
+  modal_progress_hud: ^0.1.3
+  flutter_facebook_login: ^3.0.0
+  http: ^0.12.2
+  firebase_auth: ^0.18.1+2
+  flutter_webview_plugin: ^0.3.11
+  flutter_auth_buttons: ^0.10.0
 
 dev_dependencies:
   flutter_test:
